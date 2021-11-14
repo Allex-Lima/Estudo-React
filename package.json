@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-
   "scripts": {
     "dev": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack"
@@ -21,7 +20,6 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
- 
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,7 +44,9 @@
     "@babel/preset-env": "^7.16.0",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"
