@@ -1,5 +1,10 @@
-const uniformName = 'uniform2'
+import { RepositoryItem } from "./RepositoryItem.jsx"
 
+const repository = {
+    name: 'uniform',
+    discription: 'Forms in React',
+    link: "https://github.com/Allex-Lima/Estudo-React"
+}
 
 export function RepositoryList() {
     return (
@@ -7,32 +12,10 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <li>
-                    <strong>{uniformName}</strong>
-                    <p>Form in React</p>
-
-                    <a href="#">
-                        Acessar repositórios
-                    </a>
-                </li>
-
-                <li>
-                    <strong>uniform</strong>
-                    <p>Form in React</p>
-
-                    <a href="#">
-                        Acessar repositórios
-                    </a>
-                </li>
-
-                <li>
-                    <strong>uniform</strong>
-                    <p>Form in React</p>
-
-                    <a href="#">
-                        Acessar repositórios
-                    </a>
-                </li>
+                <RepositoryItem repository={repository} />
+                <RepositoryItem repository={repository} />
+                <RepositoryItem repository={repository} />
+                <RepositoryItem repository={repository} />
             </ul>
         </section>
     )
